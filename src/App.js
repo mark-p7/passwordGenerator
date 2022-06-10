@@ -22,11 +22,13 @@ function App() {
 
   const handleUppercaseChange = () => {
 
+    var newPasswordCharacters = '';
+
     if (passwordCharacters.includes('A')) {
-      var newPasswordCharacters = passwordCharacters.replace(/[A-Z ]/g, "");
+      newPasswordCharacters = passwordCharacters.replace(/[A-Z ]/g, "");
       setPasswordCharacters(newPasswordCharacters);
     } else {
-      var newPasswordCharacters = passwordCharacters.concat('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+      newPasswordCharacters = passwordCharacters.concat('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
       setPasswordCharacters(newPasswordCharacters);
     }
 
@@ -34,11 +36,13 @@ function App() {
 
   const handleLowercaseChange = () => {
 
+    var newPasswordCharacters = '';
+
     if (passwordCharacters.includes('a')) {
-      var newPasswordCharacters = passwordCharacters.replace(/[a-z ]/g, "");
+      newPasswordCharacters = passwordCharacters.replace(/[a-z ]/g, "");
       setPasswordCharacters(newPasswordCharacters);
     } else {
-      var newPasswordCharacters = passwordCharacters.concat('abcdefghijklmnopqrstuvwxyz');
+      newPasswordCharacters = passwordCharacters.concat('abcdefghijklmnopqrstuvwxyz');
       setPasswordCharacters(newPasswordCharacters);
     }
 
@@ -46,11 +50,13 @@ function App() {
 
   const handleNumberChange = () => {
 
+    var newPasswordCharacters = '';
+
     if (passwordCharacters.includes('1')) {
-      var newPasswordCharacters = passwordCharacters.replace(/[0-9 ]/g, "");
+      newPasswordCharacters = passwordCharacters.replace(/[0-9 ]/g, "");
       setPasswordCharacters(newPasswordCharacters);
     } else {
-      var newPasswordCharacters = passwordCharacters.concat('0123456789');
+      newPasswordCharacters = passwordCharacters.concat('0123456789');
       setPasswordCharacters(newPasswordCharacters);
     }
 
@@ -58,11 +64,13 @@ function App() {
 
   const handleSpecialCharacterChange = () => {
 
+    var newPasswordCharacters = '';
+    
     if (passwordCharacters.includes('@')) {
-      var newPasswordCharacters = passwordCharacters.replace(/[^a-zA-Z0-9 ]/g, "");
+      newPasswordCharacters = passwordCharacters.replace(/[^a-zA-Z0-9 ]/g, "");
       setPasswordCharacters(newPasswordCharacters);
     } else {
-      var newPasswordCharacters = passwordCharacters.concat('!@#$%^&*()-_');
+      newPasswordCharacters = passwordCharacters.concat('!@#$%^&*()-_');
       setPasswordCharacters(newPasswordCharacters);
     }
 
@@ -114,6 +122,7 @@ function App() {
         <FormControlLabel control={<Checkbox onClick={handleNumberChange} />} label="No Numbers" />
         <FormControlLabel control={<Checkbox onClick={handleSpecialCharacterChange} />} label="No Special Characters" />
       </FormGroup>
+      <div><p>Made by Mark De Guzman</p><div><a href='https://github.com/mark-p7'>Github</a> | <a href='https://www.linkedin.com/in/mark-d-013447206/'>Linkedin</a> | <a href='https://markdeguzman.vercel.app/'>My Website</a></div></div>
     </div>
   );
 }
