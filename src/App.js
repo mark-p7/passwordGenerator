@@ -122,7 +122,7 @@ function App() {
         <FormControlLabel control={<Checkbox onClick={handleNumberChange} />} label="No Numbers" />
         <FormControlLabel control={<Checkbox onClick={handleSpecialCharacterChange} />} label="No Special Characters" />
       </FormGroup>
-      <div><p>Made by Mark De Guzman</p><div><a href='https://github.com/mark-p7'>Github</a> | <a href='https://www.linkedin.com/in/mark-d-013447206/'>Linkedin</a> | <a href='https://markdeguzman.vercel.app/'>My Website</a></div></div>
+      <div><p>Made by Mark De Guzman</p><p>Built with React, HTML, CSS and JavaScript</p><div><a href='https://github.com/mark-p7'>Github</a> | <a href='https://www.linkedin.com/in/mark-d-013447206/'>Linkedin</a> | <a href='https://markdeguzmanportfolio.vercel.app/'>My Website</a></div></div>
     </div>
   );
 }
